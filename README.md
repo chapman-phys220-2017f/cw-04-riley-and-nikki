@@ -1,8 +1,8 @@
 # PHYS220 CW 4
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Riley Kendall and Nikki Schwartz**
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-04-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-04-kenda106ITHINK)
 
 ## Specification
 
@@ -17,7 +17,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
+The provided templates were very useful for understanding what is expected of us, for example docstring wise, and also for understanding the correct syntax that should be used with numpy, arrays, and even lists.  Answering part 4, many points are needed per period of sinc to obtain an accurate plot, but I would specifically say that five points describe the function shape pretty well.  This is because those five points hit the maximums and minimums of the function.
 
 **CHANGEME**
 
@@ -30,4 +30,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Riley and Nikki**
