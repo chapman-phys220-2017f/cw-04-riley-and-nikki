@@ -42,3 +42,16 @@ def test_gauss_array():
     # Numpy has built-in testing functions to iterate over arrays and compare
     # values up to certain tolerances
     np.testing.assert_almost_equal(g, desired)
+    
+def test_sinc_array():
+    """test_sinc_array()
+    Tests whether Gaussian values are correct for domain points -1, 0, and 1,
+    using the numpy array implementation.
+    """
+    x,s = cw04.sinc_array(0,math.pi,math.pi/6)
+    desired = np.array([0.24197072451914337, 0.3989422804014327, 0.24197072451914337])
+    print("Obtained:",g)
+    print("Desired:",desired)
+    # Numpy has built-in testing functions to iterate over arrays and compare
+    # values up to certain tolerances
+    np.testing.assert_almost_equal(g, desired)
