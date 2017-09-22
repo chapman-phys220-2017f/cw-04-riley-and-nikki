@@ -110,7 +110,7 @@ def sinc_array(a, b, n=10000):
         a (float) : Lower bound of domain
         b (float) : Upper bound of domain
         n (int, optional) : Number of points in domain, defaults to 10000.
-    
+
     Returns:
         (x, g) : Pair of numpy arrays of float64
             x  : [a, ..., b] Array of n equally spaced float64 between a and b
