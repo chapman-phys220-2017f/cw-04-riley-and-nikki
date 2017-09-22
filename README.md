@@ -2,7 +2,7 @@
 
 **Author(s):** **Riley Kendall and Nikki Schwartz**
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-04-kenda106ITHINK)
+[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-04-riley-and-nikki)
 
 ## Specification
 
