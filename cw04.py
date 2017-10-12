@@ -61,11 +61,13 @@ def gen_gaussian_array(a, b, n=1000):
             x  : [a, ..., b] Array of n equally spaced float64 between a and b
             g  : [g(a), ..., g(b)] Array of Gaussian values matched to x
     """
+    ### No need for np.array here. np.linspace already returns an array.
     x = np.array(np.linspace(a,b,n),dtype=np.float64)
     def gauss(x):
-        return (1/math.sqrt(2*math.pi))*math.exp(-x**2/2)
+        return (1/math.sqrt(2*math.pi))*math.exp(-x**2/2)  ### Do not use math if using numpy. Use np.sqrt etc.
+    ### Vectorize is not needed here since all operations are already vectorized (if np.exp and np.pi and np.sqrt are used)
     fx = np.vectorize(gauss)
-    g = fx(x)
+    g = fx(x)  ### No need to redefine g here. Just return gauss(x) directly.
     return(x,g)
 
 #SINC LIST
@@ -116,14 +118,14 @@ def sinc_array(a, b, n=10000):
             x  : [a, ..., b] Array of n equally spaced float64 between a and b
             g  : [g(a), ..., g(b)] Array of Gaussian values matched to x
     """
-    x = np.array(np.linspace(a,b,n),dtype=np.float64)
+    x = np.array(np.linspace(a,b,n),dtype=np.float64)  ### no need for np.array
     def sinc(x):
         if x == 0:
             return 1
         else:
             return (math.sin(x)/x)
-    fx = np.vectorize(sinc)
-    g = fx(x)
+    fx = np.vectorize(sinc)  ### Vectorize IS needed here, since the if statement in sinc is not vectorized yet.
+    g = fx(x)  ### no need for g, just return fx(x) directly.
     return(x,g)
 
 
